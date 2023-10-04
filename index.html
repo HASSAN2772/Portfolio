@@ -228,9 +228,18 @@
             <p><i class="fa-solid fa-envelope"></i>ramzanafzal82@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>0322-8039792</p>
             <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/CallmeMrRA"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/call_me_mr_ra/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://github.com/HASSAN2772"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ramzan-afzal-8617a6235/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
             <a href="./img/Ramzan's Resume.pdf" class="btn btn2" download
               >Download CV</a
@@ -275,6 +284,13 @@
         <p>Made with <i class="fa-solid fa-heart"></i> by Muhammad Ramzan.</p>
       </div>
     </div>
+
+    <!-- back to top buttton -->
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
 
     <script>
       // for tab section in about
@@ -358,6 +374,27 @@
           }
         });
       };
+
+      /**
+       * Scroll top button
+       */
+      const scrollTop = document.querySelector(".scroll-top");
+      if (scrollTop) {
+        const togglescrollTop = function () {
+          window.scrollY > 100
+            ? scrollTop.classList.add("active")
+            : scrollTop.classList.remove("active");
+        };
+        window.addEventListener("load", togglescrollTop);
+        document.addEventListener("scroll", togglescrollTop);
+        scrollTop.addEventListener(
+          "click",
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          })
+        );
+      }
     </script>
   </body>
 </html>
