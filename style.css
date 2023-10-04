@@ -479,6 +479,7 @@ nav .fas {
   .header_text {
     margin-top: 100%;
     font-size: 16px;
+    width: 50%;
   }
   .header_text h1 {
     font-size: 30px;
@@ -524,6 +525,6 @@ nav .fas {
   }
   .contact-left,
   .contact-right {
-    flex-basis: 100%;
+    flex-basis: 90%;
   }
 }
