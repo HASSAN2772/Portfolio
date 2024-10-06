@@ -1,401 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./img/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div id="preloader" class="preloader">
-      <div class="loader">
-        <div class="symbol">R</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./img/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div id="preloader" class="preloader">
+    <div class="loader">
+      <div class="symbol">R</div>
+    </div>
+  </div>
+  <section id="header" class="header show-animate">
+    <div class="container">
+      <nav>
+        <h2>My Port<span class="logo">folio.</span></h2>
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header_text">
+        <p class="animate">Hello there, My name is</p>
+        <h1 class="animate"><span class="header-autotype"></span></h1>
+        <p class="animate">Software Engineer</p>
+        <p class="animate">Angular / Asp.Net Core / PHP-core</p>
+      </div>
+      <a href="./img/Ramzan's Resume.pdf" class="btn btn2 animate" download>Download CV</a>
+      <a href="mailto:ramzanafzal82@gmail.com" class="btn btn2 animate">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./img/5118756.jpg" alt="about_pic" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub_headings animate">About Me</h1>
+          <p class="sub_para animate">
+            As an Information Technology student, I am passionate about web development and design. I possess advanced
+            knowledge of HTML & CSS, including valid and semantic markup, along with the latest features of HTML5 and
+            CSS3. Additionally, I am proficient in frameworks like Bootstrap and SASS. I have advanced skills in
+            Angular, ASP.NET Core, JavaScript, PHP-core, MySQL & SQL Server databases. I am committed to delivering high-quality work
+            efficiently to my company and clients.
+          </p>
+          <div class="tab_heading animate">
+            <p class="tab_links active_link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab_links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab_links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab_content active_tab animate" id="skills">
+            <ul>
+              <li>
+                <span class="tab_content_span">UI/UX</span>
+                <p>Design Web/App interfaces</p>
+              </li>
+              <li>
+                <span class="tab_content_span">Web Development</span>
+                <p>Building web application</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab_content animate" id="experience">
+            <ul>
+              <li>
+                <span class="tab_content_span">2022-2022</span>
+                <p>HTML & CSS Bootcamp From MLSA fabtech</p>
+              </li>
+              <li>
+                <span class="tab_content_span">2022-Continue</span>
+                <p>Full Stack Web Developer</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab_content animate" id="education">
+            <ul>
+              <li>
+                <span class="tab_content_span">2018-2022</span>
+                <p>Bachelors in Information Technology</p>
+                <p>University of the Punjab, Lahore</p>
+              </li>
+              <li>
+                <span class="tab_content_span">2016-2018</span>
+                <p>ICS from Govt. M.A.O postgraduate college</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <section id="header" class="header show-animate">
-      <div class="container">
-        <nav>
-          <h2>My Port<span class="logo">folio.</span></h2>
-          <ul id="sidemenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header_text">
-          <p class="animate">Hello there, My name is</p>
-          <h1 class="animate"><span class="header-autotype"></span></h1>
-          <p class="animate">Full Stack Developer</p>
-          <p class="animate">Angular / Asp.Net Core</p>
+  </section>
+
+  <!-- services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h1 class="services-head">My services</h1>
+      <div class="services-list">
+        <div class="animate-L">
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+            A UI (User Interface) deals with the application's graphical
+            layout, which includes buttons, screen layout, animations,
+            transitions, micro-interactions, and so on. In short, UI is all
+            about how things look.<br />
+            UX (User Experience) design deals with how users interact with the
+            system. Logical navigation and how smooth and intuitive the
+            experience is all fall under UX design. In short, this type of
+            design helps users have a positive experience.
+          </p>
+          <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/">Learn more</a>
         </div>
-        <a href="./img/Ramzan's Resume.pdf" class="btn btn2 animate" download
-          >Download CV</a
-        >
-        <a href="mailto:ramzanafzal82@gmail.com" class="btn btn2 animate"
-          >Hire Me</a
-        >
-      </div>
-    </section>
-
-    <!-- about section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./img/5118756.jpg" alt="about_pic" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub_headings animate">About Me</h1>
-            <p class="sub_para animate">
-              As a student of "Information Technology", I am passionate about
-              web development and design.I have advanced knowledge of HTML & CSS
-              including valid and semantic markup, as well as cutting edge of
-              HTML5 and CSS3 features, Also I know about Bootstrap & Tailwind.
-              In addition, I have advanced knowledge of JavaScript, PHP, and
-              MySQL databasen. I strive to deliver the highest quality work to
-              my company/clients and do not waste any time in getting the task
-              done.
-            </p>
-            <div class="tab_heading animate">
-              <p class="tab_links active_link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab_links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab_links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab_content active_tab animate" id="skills">
-              <ul>
-                <li>
-                  <span class="tab_content_span">UI/UX</span>
-                  <p>Design Web/App interfaces</p>
-                </li>
-                <li>
-                  <span class="tab_content_span">Web Development</span>
-                  <p>Building web application</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab_content animate" id="experience">
-              <ul>
-                <li>
-                  <span class="tab_content_span">2022-2022</span>
-                  <p>HTML & CSS Bootcamp From MLSA fabtech</p>
-                </li>
-                <li>
-                  <span class="tab_content_span">2022-Continue</span>
-                  <p>Full Stack Web Developer</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab_content animate" id="education">
-              <ul>
-                <li>
-                  <span class="tab_content_span">2018-2022</span>
-                  <p>Bachelors in Information Technology</p>
-                  <p>University of the Punjab, Lahore</p>
-                </li>
-                <li>
-                  <span class="tab_content_span">2016-2018</span>
-                  <p>ICS from Govt. M.A.O postgraduate college</p>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="animate-R">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Web development refers to the creating, building, and maintaining
+            of websites. It includes aspects such as web design, web
+            publishing, web programming, and database management. It is the
+            creation of an application that works over the internet i.e.
+            websites.
+          </p>
+          <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">Learn more</a>
         </div>
-      </div>
-    </section>
-
-    <!-- services -->
-    <section id="services" class="services">
-      <div class="container">
-        <h1 class="services-head">My services</h1>
-        <div class="services-list">
-          <div class="animate-L">
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>UI/UX Design</h2>
-            <p>
-              A UI (User Interface) deals with the application's graphical
-              layout, which includes buttons, screen layout, animations,
-              transitions, micro-interactions, and so on. In short, UI is all
-              about how things look.<br />
-              UX (User Experience) design deals with how users interact with the
-              system. Logical navigation and how smooth and intuitive the
-              experience is all fall under UX design. In short, this type of
-              design helps users have a positive experience.
-            </p>
-            <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/"
-              >Learn more</a
-            >
-          </div>
-          <div class="animate-R">
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Development</h2>
-            <p>
-              Web development refers to the creating, building, and maintaining
-              of websites. It includes aspects such as web design, web
-              publishing, web programming, and database management. It is the
-              creation of an application that works over the internet i.e.
-              websites.
-            </p>
-            <a
-              href="https://www.geeksforgeeks.org/web-development/"
-              target="_blank"
-              >Learn more</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- portfolio -->
-    <section id="portfolio">
-      <div class="container">
-        <h1 class="portfolio-head animate">My Work</h1>
-        <div class="portfolio-list">
-          <div class="port-work">
-            <img src="./img/gms.png" alt="portfolio-img1" />
-            <div class="layer">
-              <h3>GMS</h3>
-              <p>
-                The GMS(Grocery Store Management system) is the multi company
-                ecommerce project.In this any company can register youself and
-                sell his product on this platform.This project was built on PHP
-                core technology through ajax based system and this project was
-                made by me and my owner.
-              </p>
-              <a href="https://www.istanbulljuralivs.se/"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="port-work">
-            <img src="./img/sameday.png" alt="portfolio-img1" />
-            <div class="layer">
-              <h3>Same day delivery</h3>
-              <p>
-                This project is the courier service project.Basically its
-                provide courier services to UK customer to collect his/her
-                parcel under 60 minutes after a call.In this project i did some
-                tasks related to front-end/User interface like login, signup,
-                contact form interface etc.
-              </p>
-              <a href="https://www.sameday-delivery.co.uk/"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="port-work">
-            <img src="./img/devonsite.png" alt="portfolio-img1" />
-            <div class="layer">
-              <h3>DevOnSite</h3>
-              <p>
-                This is the website of my company.I completed my internship here
-                and now doing job here.when i was on internship i did some work
-                on its UI but after internship completed i made his backend in
-                PHP language using MySQL database.
-              </p>
-              <a href="www.devonsite.com"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact us -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h1 class="contact-head">Contact Me</h1>
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="contact-left-head">Details</h1>
-            <p><i class="fa-solid fa-envelope"></i>ramzanafzal82@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>0322-8039792</p>
-            <div class="social-links">
-              <a href="https://www.facebook.com/CallmeMrRA"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="https://www.instagram.com/call_me_mr_ra/"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-              <a href="https://github.com/HASSAN2772"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/ramzan-afzal-8617a6235/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </div>
-            <a href="./img/Ramzan's Resume.pdf" class="btn btn2" download
-              >Download CV</a
-            >
-          </div>
-          <div class="contact-right animate">
-            <form name="submit-to-google-sheet">
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                name="Name"
-                id="name"
-                placeholder="Your Name"
-                required
-              />
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                name="Email"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-              <label for="message">Message:</label>
-              <textarea
-                name="Message"
-                id="message"
-                rows="6"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <div id="footer">
-      <div class="copyright">
-        <p>Made with <i class="fa-solid fa-heart"></i> by Muhammad Ramzan.</p>
       </div>
     </div>
+  </section>
 
-    <!-- back to top buttton -->
-    <a
-      href="#"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="fa-solid fa-arrow-up"></i
-    ></a>
+  <!-- portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="portfolio-head animate">My Work</h1>
+      <div class="portfolio-list">
+        <div class="port-work">
+          <img src="./img/gms.png" alt="portfolio-img1" />
+          <div class="layer">
+            <h3>GMS</h3>
+            <p>
+              The GMS(Grocery Store Management system) is the multi company
+              ecommerce project.In this any company can register youself and
+              sell his product on this platform.This project was built on PHP
+              core technology through ajax based system and this project was
+              made by me and my owner.
+            </p>
+            <a href="https://www.istanbulljuralivs.se/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="port-work">
+          <img src="./img/sameday.png" alt="portfolio-img1" />
+          <div class="layer">
+            <h3>Same day delivery</h3>
+            <p>
+              This project is the courier service project.Basically its
+              provide courier services to UK customer to collect his/her
+              parcel under 60 minutes after a call.In this project i did some
+              tasks related to front-end/User interface like login, signup,
+              contact form interface etc.
+            </p>
+            <a href="https://www.sameday-delivery.co.uk/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="port-work">
+          <img src="./img/devonsite.png" alt="portfolio-img1" />
+          <div class="layer">
+            <h3>DevOnSite</h3>
+            <p>
+              This is the website of my company.I completed my internship here
+              and now doing job here.when i was on internship i did some work
+              on its UI but after internship completed i made his backend in
+              PHP language using MySQL database.
+            </p>
+            <a href="www.devonsite.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      // for tab section in about
-      var tablinks = document.getElementsByClassName("tab_links");
-      var tabcontents = document.getElementsByClassName("tab_content");
+  <!-- contact us -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h1 class="contact-head">Contact Me</h1>
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="contact-left-head">Details</h1>
+          <p><i class="fa-solid fa-envelope"></i>ramzanafzal82@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>0322-8039792</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/CallmeMrRA"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/call_me_mr_ra/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://github.com/HASSAN2772"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ramzan-afzal-8617a6235/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="./img/Ramzan's Resume.pdf" class="btn btn2" download>Download CV</a>
+        </div>
+        <div class="contact-right animate">
+          <form name="submit-to-google-sheet">
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name" placeholder="Your Name" required />
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email" placeholder="Your Email" required />
+            <label for="message">Message:</label>
+            <textarea name="Message" id="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <div id="footer">
+    <div class="copyright">
+      <p>Made with <i class="fa-solid fa-heart"></i> by Muhammad Ramzan.</p>
+    </div>
+  </div>
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active_link");
-        }
+  <!-- back to top buttton -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="fa-solid fa-arrow-up"></i></a>
 
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active_tab");
-        }
-        event.currentTarget.classList.add("active_link");
-        document.getElementById(tabname).classList.add("active_tab");
+  <script>
+    // for tab section in about
+    var tablinks = document.getElementsByClassName("tab_links");
+    var tabcontents = document.getElementsByClassName("tab_content");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active_link");
       }
-      // for type text
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const spanElement = document.querySelector(".header-autotype");
-        const textToType = "Muhammad Ramzan";
-        let currentIndex = 0;
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active_tab");
+      }
+      event.currentTarget.classList.add("active_link");
+      document.getElementById(tabname).classList.add("active_tab");
+    }
+    // for type text
 
-        function typeText() {
-          if (currentIndex < textToType.length) {
-            spanElement.textContent += textToType.charAt(currentIndex);
-            currentIndex++;
-            setTimeout(typeText, 200);
-          }
+    document.addEventListener("DOMContentLoaded", function () {
+      const spanElement = document.querySelector(".header-autotype");
+      const textToType = "Muhammad Ramzan";
+      let currentIndex = 0;
+
+      function typeText() {
+        if (currentIndex < textToType.length) {
+          spanElement.textContent += textToType.charAt(currentIndex);
+          currentIndex++;
+          setTimeout(typeText, 200);
         }
-        // for preloader
-        window.addEventListener("load", function () {
-          const preloader = document.querySelector("#preloader");
-          setTimeout(() => {
-            preloader.style.display = "none";
-            typeText();
-          }, 1000);
-        });
+      }
+      // for preloader
+      window.addEventListener("load", function () {
+        const preloader = document.querySelector("#preloader");
+        setTimeout(() => {
+          preloader.style.display = "none";
+          typeText();
+        }, 1000);
       });
-      // navbar for small screen
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
+    });
+    // navbar for small screen
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
 
-      // contact form
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwZa6WhnyQJ4KK55Y75eCU0XvjfXp7ha8OgES5GJ8xw6BbfFpdFAHfWYwIPhj9AJYU20g/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
+    // contact form
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwZa6WhnyQJ4KK55Y75eCU0XvjfXp7ha8OgES5GJ8xw6BbfFpdFAHfWYwIPhj9AJYU20g/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message Sent Successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 4000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message Sent Successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 4000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+    // for smooth scrolling/ scroll animate
+    let sections = document.querySelectorAll("section");
+
+    window.onscroll = () => {
+      sections.forEach((sec) => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+
+        if (top >= offset && top < offset + height) {
+          sec.classList.add("show-animate");
+        } else {
+          sec.classList.remove("show-animate");
+        }
       });
-      // for mooth scrolling/ scroll animate
-      let sections = document.querySelectorAll("section");
+    };
 
-      window.onscroll = () => {
-        sections.forEach((sec) => {
-          let top = window.scrollY;
-          let offset = sec.offsetTop - 150;
-          let height = sec.offsetHeight;
-
-          if (top >= offset && top < offset + height) {
-            sec.classList.add("show-animate");
-          } else {
-            sec.classList.remove("show-animate");
-          }
-        });
+    /**
+     * Scroll top button
+     */
+    const scrollTop = document.querySelector(".scroll-top");
+    if (scrollTop) {
+      const togglescrollTop = function () {
+        window.scrollY > 100
+          ? scrollTop.classList.add("active")
+          : scrollTop.classList.remove("active");
       };
+      window.addEventListener("load", togglescrollTop);
+      document.addEventListener("scroll", togglescrollTop);
+      scrollTop.addEventListener(
+        "click",
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+      );
+    }
+  </script>
+</body>
 
-      /**
-       * Scroll top button
-       */
-      const scrollTop = document.querySelector(".scroll-top");
-      if (scrollTop) {
-        const togglescrollTop = function () {
-          window.scrollY > 100
-            ? scrollTop.classList.add("active")
-            : scrollTop.classList.remove("active");
-        };
-        window.addEventListener("load", togglescrollTop);
-        document.addEventListener("scroll", togglescrollTop);
-        scrollTop.addEventListener(
-          "click",
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          })
-        );
-      }
-    </script>
-  </body>
 </html>
